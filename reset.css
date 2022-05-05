@@ -106,7 +106,6 @@
   }
   body {
     line-height: 1;
-    background: var(--bgPointColor);
   }
   ol,
   ul {
