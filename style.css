@@ -49,19 +49,18 @@ body {
     width: 1220px;
     display: flex;
     flex-direction: column;
-    background-color: #888;
 }
 
 .body-content-top {
     height: 688px;
     width: 100%;
-    background-color: #777;
     margin-top: 30px;
 }
 
 .content-top-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .content-top-item {
@@ -100,7 +99,7 @@ body {
 }
 
 .top-video-card-info {
-    width: 254px;
+    width: 251px;
     height: 48px;
     padding: 10px 15px 0 0;
     display: flex;
@@ -115,6 +114,7 @@ a.top-clip-title {
     color: #222;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     margin-bottom: 2px;
     font-family: 'NanumGothic', 나눔고딕, 'nanumgothic', 'NanumSquareRound', '-apple-system','BlinkMacSystemFont','SFProDisplay', 'AppleSDGothicNeo', 'HelveticaNeue', 'Helvetica', arial, 'sans-serif', 'Malgun Gothic', Dotum;;
     cursor: pointer;
@@ -232,15 +232,101 @@ a.top-ar-name {
     background-image: url(./img/6144e2ea-c6d9-11ec-912c-48df379cca40_05.jpeg);
 }
 
-.content-top-item:nth-child(3) .top-video-thumb-box {
-    
+.top-sketch-box {
+    overflow: hidden;
+    background-image: url(./img/3kU2DPIspMO6RbkYgb1T.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 20;
+    width: 285px;
+    height: 160px;
+    object-fit: unset;
+    cursor: pointer;
+    border-radius: 12px 12px 0 0;
+    border: solid 1px rgba(0,0,0,0.05);
 }
 
-.content-top-item:nth-child(4) .top-video-thumb-box {
-    background-image: url(./img/1651540475714.jpeg);
+.top-sketchinfo-box {
+    border: solid 1px rgba(0,0,0,0.05);
+    border-width: 0 1px 1px 1px;
+    z-index: 20;
+    border-radius: 0 0 12px 12px;
+    background-image: linear-gradient(260deg, #b5ed58, #32c5ff, #c941fa);
+    background-repeat: no-repeat;
+    height: 48px;
+    padding: 14px 17px 10px 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.top-sketchinfo-box .top-clip-title {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -1.29px;
+    font-family: NanumSquareRound;
+    font-weight: 800;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
+.top-sketch-profile {
+    width: 34px;
+    height: 34px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(./img/½Ó.png);
+    background-size: cover;
+}
+
+.top-sketch-label {
+    background-image: linear-gradient(250deg, #b5ed58, #32c5ff, #c941fa);
+    position: absolute;
+    top: 12px;
+    left: 22px;
+    height: 32px;
+    width: 85px;
+    padding: 0 11px 0 13px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 33px;
+    font-family: NanumSquareRound;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -1px;
+    z-index: 25;
+    cursor: pointer;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-sketch-label-next {
+    background-image: url(./img/sp_Card.png);
+    background-size: 360px 274px;
+    margin-left: 2px;
+    background-position: -206px -168px;
+    width: 8px;
+    height: 12px;
+    margin-left: 2px;
+}
+
+.content-top-item-large {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    background-image: url(./img/hot-dot-line.png);
+    background-size: 586px 430px;
+    border-radius: 24px;
+    margin-left: 10px;
+    width: 586px;
+    height: 430px;
+}
 
 /*=====================*/
 
