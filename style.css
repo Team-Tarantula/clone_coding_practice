@@ -232,6 +232,10 @@ a.top-ar-name {
     background-image: url(./img/6144e2ea-c6d9-11ec-912c-48df379cca40_05.jpeg);
 }
 
+.content-top-item:nth-child(3) .top-video-thumb-box {
+    background-image: url(./img/1650965676083.jpeg);
+}
+
 .top-sketch-box {
     overflow: hidden;
     background-image: url(./img/3kU2DPIspMO6RbkYgb1T.png);
