@@ -6,18 +6,65 @@
     <title>쥬니어 네이버</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="variables.css">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <script
+        src="https://kit.fontawesome.com/429f4a2ef7.js"
+        crossorigin="anonymous"
+    ></script>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <div class="header-top"></div>
-            <div class="header-bottom"></div>
-        </div>
+            <div class="header-top">
+              <div class="header-top_logo">
+                <a href="https://jr.naver.com/?logout=true"
+                  ><img src="screenshots/juniver.png"
+                /></a>
+              </div>
+              <div class="header-top_search">
+                <input
+                  type="text"
+                  maxlength="110"
+                  placeholder="검색어를 입력하세요"
+                />
+                <img src="screenshots/search_btn.png" />
+              </div>
+              <div class="header-top_link">
+                <a
+                  href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com"
+                  ><span>로그인</span></a
+                >
+                <div><i class="fab fa-neos"></i></div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <ul class="header-bottom_icons">
+                <div class="header-bottom_icons_box">
+                  <li>
+                    <i class="fas fa-trophy"></i>
+                    <span>추천</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-smile"></i>
+                    <span>캐릭터</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-ice-cream"></i>
+                    <span>카테고리</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-heart"></i>
+                    <span>즐겨찾기</span>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
     </header>
     <body>
         <div class="content-box">
-            <div class="body-content-top"></div>
             <div class="body-content-bottom">
                 <section Class="bottom_circular_card">
                     <div class="bottom_character">
@@ -199,6 +246,123 @@
                 </section>
 
             </div>
+            <div class="body-content-top">
+                <div class="content-top-container">
+                    <div class="content-top-item">
+                        <div class="top-video-thumb-box">
+                            <span class="top-new-label"></span>
+                        </div>
+                        <div class="top-video-info-box">
+                            <div class="top-video-card-info">
+                                <a class="top-clip-title">생활습관 동화 따라 읽기 | Bubble Bubble T...</a>
+                                <a class="top-clip-name">코코몽</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item">
+                        <div class="top-video-thumb-box">
+                            <span class="top-new-label"></span>
+                        </div>
+                        <div class="top-video-info-box">
+                            <div class="top-video-card-info">
+                                <a class="top-clip-title">바다나무 어린이 중국어 동와 | 雨天的鸭子(Rainy Day Ducks)</a>
+                                <a class="top-clip-name">바다나무</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item">
+                        <a class="ar-card-link-area">
+                            <div class="ar-thumb-box">
+                                <video playsinline="" autoplay="" src="https://static-jr.pstatic.net/contents/ar/mp4/ar_rabbit.mp4" loop="">
+                                </video>
+                                <strong class="top-ar-view"></strong>
+                            </div>
+                        </a>
+                        <div class="top-ar-info-box">
+                            <div class="top-ar-card-info">
+                                <a class="top-ar-title">토끼</a>
+                                <a class="top-ar-name">동물AR</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item">
+                        <div class="top-sketch-box">
+                            <span class="top-sketch-label">
+                                스케치북
+                                <span class="top-sketch-label-next"></span>
+                            </span>
+                        </div>
+                        <div class="top-sketchinfo-box">
+                                <a class="top-clip-title">자캐 회관</a>
+                                <a class="top-sketch-profile" href=""></a>
+                        </div>
+                    </div>
+                    <div class="content-top-item-large">
+                        <div class="top-video-thumb-box-large">
+                            <div class="top-video-large-bearitem"></div>
+                        </div>
+                        <div class="top-video-large-card-info">
+                            <div class="display-column">
+                                <a class="top-clip-title-large">요괴메카드 오프닝 Ghost Mecard Opening</a>
+                                <a class="top-clip-name-large">요괴메카드</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item nth-5">
+                        <div class="top-video-thumb-box">
+                            <span class="top-new-label"></span>
+                        </div>
+                        <div class="top-video-info-box">
+                            <div class="top-video-card-info">
+                                <a class="top-clip-title">생활습관 동화 따라 읽기 | Bubble Bubble T...</a>
+                                <a class="top-clip-name">코코몽</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item nth-6">
+                        <div class="top-video-thumb-box">
+                            <span class="top-new-label"></span>
+                        </div>
+                        <div class="top-video-info-box">
+                            <div class="top-video-card-info">
+                                <a class="top-clip-title">생활습관 동화 따라 읽기 | Bubble Bubble T...</a>
+                                <a class="top-clip-name">코코몽</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="content-top-item nth-7">
+                        <div class="top-video-thumb-box">
+                            <span class="top-new-label"></span>
+                        </div>
+                        <div class="top-video-info-box">
+                            <div class="top-video-card-info">
+                                <a class="top-clip-title">생활습관 동화 따라 읽기 | Bubble Bubble T...</a>
+                                <a class="top-clip-name">코코몽</a>
+                            </div>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="top-service-link-card">
+                        <strong class="top-service-title">서비스 바로가기</strong>
+                        <p class="top-survice-text">다양한 콘텐츠를 즐겨보세요!</p>
+                        <div class="top-button-container">
+                            <a href="" class="top-survice-card-link">
+                                <div class="top-survice-card-title">
+                                    <span>스케치북</span>
+                                    <div class="top-label-next"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content-bottom"></div>
         </div>
         
     </body>
@@ -207,3 +371,4 @@
     </footer>
 </body>
 </html>
+
