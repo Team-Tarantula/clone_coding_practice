@@ -65,12 +65,240 @@ body {
     background-color: #999;
 }
 /* footer */
+div {
+    display: block;
+}
+
 footer {
     height: 450px;
     width: 100%;
     background-color: #555;
+    font-family: 'NanumGothic', 나눔고딕, 'nanumgothic', 'NanumSquareRound', '-apple-system','BlinkMacSystemFont','SFProDisplay', 'AppleSDGothicNeo', 'HelveticaNeue', 'Helvetica', arial, 'sans-serif', 'Malgun Gothic', Dotum;
+}
+
+.footer_bar, .footer_big_bar {
+    margin: 3px 6px;
+    display: inline-block;
+    vertical-align: top;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(125,135,156,0.2);
+}
+
+.footer_big_bar {
+    height: 39px;
+    margin: 0px 10px;
+}
+
+.footer {
+    z-index: 25;
+    /* text-align: center; */
+    letter-spacing: -0.5px;
+    padding-top: 13px;
+    background-color: #eceff3;
+    box-sizing: border-box;
+    position: relative;
 }
 
 .footer-content-box {
+    /* position: relative; */
+    margin: 0px 272px;
+    padding: 38px 0px 60px;
     width: 968px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    /* font-weight: normal; */
+    color: #8a909e;
 }
+
+.footer_list_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_quick_menu, .footer_customer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_quick_menu {
+    margin-right: 24px;
+    padding-right: 70px;
+}
+
+.quick_menu_link {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer_corp {
+    display: block;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.footer_copyright_box {
+    margin-top: 12px;
+    /* padding-right: 204px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_link {
+    margin-top: 15px;
+}
+
+.footer_app_link {
+    overflow: hidden;
+    display: block;
+    width: 60px;
+    height: 36px;
+    padding: 6px 0 6px 2px;
+    text-align: center;
+    border: solid 1px rgba(138,144,158,0.01);
+    background-color: #fff;
+    border-radius: 27px;
+    /* margin-left: 9px; */
+}
+
+.footer_share_box {
+    text-align: right;
+}
+
+.footer_share_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_share_item {
+    margin-left: 9px;
+}
+
+.footer_share_link {
+    display: block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #8a909e;
+    border-radius: 27px;
+    -webkit-border-radius: 27px;
+}
+
+.blind {
+    overflow: hidden !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    clip: rect(0 0 0 0) !important;
+}
+
+.footer_share_link::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    background-position: -147px -109px;
+    width: 25px;
+    height: 13px;
+    content: '';
+}
+
+.footer_share_link::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 36px;
+    margin-right: -1px;
+    content: '';
+}
+
+.app_ios, .app_adr, .footer_share_link.share_blog::before, .footer_share_link.share_youtube::before, .footer_share_link.share_instagram::before {
+    background-image: url(https://jr.naver.com/assets/img/sprite/sp_footer.png);
+    background-size: 188px 152px;
+}
+
+.app_ios {
+    display: inline-block;
+    vertical-align: top;
+    background-position: -164px -84px;
+    width: 16px;
+    height: 22px;
+}
+
+.app_adr {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    background-position: -147px -84px;
+    width: 16px;
+    height: 22px;
+}
+
+.footer_share_item:hover .qr_code_box {
+    opacity: 1.0;
+}
+
+.qr_code_box {
+    position: absolute;
+    bottom: 310px;
+    right: 405px;
+    opacity: 0;
+    z-index: 50;
+}
+
+.qr_code_container {
+    width: 160px;
+    height: 162px;
+    padding: 20px 14px 24px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 6%);
+    border: solid 1px transparent;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.qr_code_text {
+    margin-bottom: 12px;
+    font-family: NanumSquareRound;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: -0.6px;
+    line-height: 17px;
+    color: #222;
+}
+
+.qr_code_download {
+    display: block;
+    width: 110px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer_share_link.share_blog::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+    background-position: -147px -109px;
+    width: 25px;
+    height: 13px;
+    content: '';
+}
+
+.footer_share_link.share_youtube::before {
+    background-position: 0px -134px;
+    width: 18px;
+    height: 18px;
+}
+
+.footer_share_link.share_instagram::before {
+    background-position: -19px -134px;
+    width: 17px;
+    height: 17px;
+}
+
