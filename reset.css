@@ -165,3 +165,7 @@
   body {
     background-color: #fff;
   }
+
+  .blind {
+    display: none;
+  }
